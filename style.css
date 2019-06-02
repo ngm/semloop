@@ -1,0 +1,24 @@
+/*
+ Theme Name:   Semloop
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Sempress Child Theme
+ Author:       Neil Mather
+ Author URI:   https://doubleloop.net
+ Template:     sempress
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  sempresschild
+*/
+
+#content #nav-above {
+    display: none;
+}
+
+#site-title, #site-description {
+    font-family: 'courier new';
+}
+
+article.post {
+    border-radius: 10px;
+}
