@@ -12,6 +12,9 @@ function semloop_enqueue_styles() {
     );
 }
 
+require_once( __DIR__ . '/includes/syndication-targets.php');
+
+
 wp_embed_register_handler( 'invidious_watch', '#https?://invidio\.us/watch\?v=([A-Za-z0-9\-_]+)#i', 'wp_embed_handler_invidious' );
 wp_embed_register_handler( 'invidious_embed', '#https?://invidio\.us/embed/([A-Za-z0-9\-_]+)#i', 'wp_embed_handler_invidious' );
 function wp_embed_handler_invidious( $matches, $attr, $url, $rawattr ) {
