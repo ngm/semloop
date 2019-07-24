@@ -58,3 +58,10 @@ function sempress_posted_on() {
         esc_html( get_the_author() )
     );
 }
+
+// To try and fix microformats of reply posts.
+// see: https://github.com/ngm/doubleloop.net/issues/4
+add_filter('the_content', 'wrapPostContentWithContentMicroformats', 5, 2);
+function wrapPostContentWithContentMicroformats($content) {
+    return '<div class="p-name p-content">' . $content . '</div>';
+}
