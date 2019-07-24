@@ -22,3 +22,7 @@
 article.post {
     border-radius: 10px;
 }
+
+.kind-note .p-content {
+    padding-top: 15px;
+}
