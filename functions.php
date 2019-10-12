@@ -63,5 +63,5 @@ function sempress_posted_on() {
 // see: https://github.com/ngm/doubleloop.net/issues/4
 add_filter('the_content', 'wrapPostContentWithContentMicroformats', 5, 2);
 function wrapPostContentWithContentMicroformats($content) {
-    return '<div class="p-name p-content">' . $content . '</div>';
+    return '<div class="p-name e-content">' . $content . '</div>';
 }
